@@ -1,5 +1,7 @@
+import BlogPage from '../../containers/BlogPage';
+
 const Blog = () => {
-  return <div>Blog Page</div>;
+  return <BlogPage />;
 };
 
 export default Blog;

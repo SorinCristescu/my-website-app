@@ -1,5 +1,7 @@
+import LogoutPage from '../containers/LogoutPage';
+
 const Logout = () => {
-  return <div>Logout Page</div>;
+  return <LogoutPage />;
 };
 
 export default Logout;

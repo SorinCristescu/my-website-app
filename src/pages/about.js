@@ -1,5 +1,7 @@
+import AboutPage from '../containers/AboutPage';
+
 const About = () => {
-  return <div>About Page</div>;
+  return <AboutPage />;
 };
 
 export default About;

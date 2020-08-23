@@ -1,5 +1,7 @@
+import RegisterPage from '../containers/RegisterPage';
+
 const Register = () => {
-  return <div>Register Page</div>;
+  return <RegisterPage />;
 };
 
 export default Register;

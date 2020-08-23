@@ -1,5 +1,7 @@
+import ContactPage from '../containers/ContactPage';
+
 const Contact = () => {
-  return <div>Contact Page</div>;
+  return <ContactPage />;
 };
 
 export default Contact;

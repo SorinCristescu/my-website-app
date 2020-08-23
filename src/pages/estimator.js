@@ -1,5 +1,7 @@
+import EstimatorPage from '../containers/EstimatorPage';
+
 const Estimator = () => {
-  return <div>Estimator</div>;
+  return <EstimatorPage />;
 };
 
 export default Estimator;
