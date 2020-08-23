@@ -3,7 +3,7 @@ import { PageTransition } from 'next-page-transitions';
 import { ThemeProvider } from 'styled-components';
 
 // eslint-disable-next-line import/order
-import { theme } from '../styles/globals';
+import { theme } from '../styles/theme';
 
 // COMPONENTS
 import Layout from '../layout';

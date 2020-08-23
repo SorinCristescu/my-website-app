@@ -3,7 +3,7 @@ import { H1 } from '../../styles/typography';
 const HomePage = () => {
   return (
     <div>
-      <H1>Home page</H1>
+      <H1 textAlign="center">Home page</H1>
     </div>
   );
 };

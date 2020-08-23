@@ -1,53 +1,54 @@
 import Link from 'next/link';
 
 import { HeaderContainer, Navbar } from './style';
+import { A } from '../../styles/elements';
 
 const Header = () => {
   return (
     <HeaderContainer>
       <Link href="/">
-        <a>home</a>
+        <A>home</A>
       </Link>
 
       <Navbar>
         <li>
           <Link href="/about">
-            <a>about</a>
+            <A>about</A>
           </Link>
         </li>
         <li>
           <Link href="/portfolio">
-            <a>portfolio</a>
+            <A>portfolio</A>
           </Link>
         </li>
         <li>
           <Link href="/blog">
-            <a>blog</a>
+            <A>blog</A>
           </Link>
         </li>
         <li>
           <Link href="/contact">
-            <a>contact</a>
+            <A>contact</A>
           </Link>
         </li>
         <li>
           <Link href="/register">
-            <a>register</a>
+            <A>register</A>
           </Link>
         </li>
         <li>
           <Link href="/login">
-            <a>log in</a>
+            <A>log in</A>
           </Link>
         </li>
         <li>
           <Link href="/logout">
-            <a>log out</a>
+            <A>log out</A>
           </Link>
         </li>
         <li>
           <Link href="/estimator">
-            <a>estimate your project</a>
+            <A>estimate your project</A>
           </Link>
         </li>
       </Navbar>

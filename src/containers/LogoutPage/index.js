@@ -3,7 +3,7 @@ import { H1 } from '../../styles/typography';
 const LogoutPage = () => {
   return (
     <div>
-      <H1>Logout page</H1>
+      <H1 textAlign="center">Logout page</H1>
     </div>
   );
 };
