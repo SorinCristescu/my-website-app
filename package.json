@@ -5,11 +5,48 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "imageoptim:gif": "imageoptim \"static/**/*.gif\"",
+    "imageoptim:jpg": "imageoptim \"static/**/*.jpg\"",
+    "imageoptim:png": "imageoptim --no-imageoptim --imagealpha \"static/**/*.png\"",
+    "prettier": "prettier --write \"**/*.{html,js,json,md,mdx,mjs,yml}\""
   },
   "dependencies": {
     "next": "9.5.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styled-components": "^5.1.1",
+    "globby": "^11.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{html,js,json,md,mdx,mjs,yml}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.gif": [
+      "imageoptim",
+      "git add"
+    ],
+    "*.jpg": [
+      "imageoptim",
+      "git add"
+    ],
+    "*.png": [
+      "imageoptim --no-imageoptim --imagealpha",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-inline-react-svg": "^1.1.1",
+    "babel-plugin-styled-components": "^1.11.1",
+    "husky": "^4.2.5",
+    "imageoptim-cli": "^3.0.2",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
   }
 }
