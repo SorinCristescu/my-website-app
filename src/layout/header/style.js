@@ -10,6 +10,27 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
 
+  button {
+    width: 35px;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+
+  img {
+    width: 30px;
+    height: auto;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
   li {
     padding: 0 20px;
   }
@@ -18,13 +39,4 @@ export const HeaderContainer = styled.header`
     color: inherit;
     text-decoration: none;
   }
-`;
-export const Navbar = styled.ul`
-  width: 60%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  list-style: none;
 `;

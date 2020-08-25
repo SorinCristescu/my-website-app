@@ -59,6 +59,66 @@ const MyApp = ({ Component, pageProps }) => {
         </Layout>
       </ThemeProvider>
       <style jsx global>{`
+        @font-face {
+          font-family: 'Manrope';
+          src: url('/fonts/Manrope/Manrope-Bold.ttf');
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+        }
+        @font-face {
+          font-family: 'Manrope';
+          src: url('/fonts/Manrope/Manrope-ExtraBold.ttf');
+          font-weight: extrabold;
+          font-style: normal;
+          font-display: swap;
+        }
+        @font-face {
+          font-family: 'Manrope';
+          src: url('/fonts/Manrope/Manrope-Medium.ttf');
+          font-weight: medium;
+          font-style: normal;
+          font-display: swap;
+        }
+        @font-face {
+          font-family: 'Manrope';
+          src: url('/fonts/Manrope/Manrope-SemiBold.ttf');
+          font-weight: semibold;
+          font-style: normal;
+          font-display: swap;
+        }
+        @font-face {
+          font-family: 'Manrope';
+          src: url('/fonts/Manrope/Manrope-Regular.ttf');
+          font-weight: regular;
+          font-style: normal;
+          font-display: swap;
+        }
+        @font-face {
+          font-family: 'MonumentExtended';
+          src: url('/fonts/MonumentExtended/MonumentExtended-Regular.otf');
+          font-weight: regular;
+          font-style: normal;
+          font-display: swap;
+        }
+        @font-face {
+          font-family: 'MonumentExtended';
+          src: url('/fonts/MonumentExtended/MonumentExtended-Ultrabold.otf');
+          font-weight: ultrabold;
+          font-style: normal;
+          font-display: swap;
+        }
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          color: ${({ theme }) => theme.colors.primary};
+          background-color: white;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
         .page-transition-enter {
           opacity: 0;
           transform: translate3d(0, 20px, 0);
