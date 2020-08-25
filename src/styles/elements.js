@@ -8,22 +8,22 @@ export const Ol = styled.ol``;
 export const Li = styled.li``;
 
 export const A = styled.a`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
   font-style: ${(props) => props.style};
   font-size: 14px;
-  font-weight: 700;
-  color: ${({ theme }) => theme.colors.primary};
+  font-weight: bold;
+  color: ${({ theme }) => theme.colors.primary}!important;
   text-align: ${(props) => props.textAlign};
   cursor: pointer;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.hover};
+    color: ${({ theme }) => theme.colors.primaryHover}!important;
   }
   &:focus {
-    color: ${({ theme }) => theme.colors.hover};
+    color: ${({ theme }) => theme.colors.primaryHover}!important;
   }
   &:active {
-    color: ${({ theme }) => theme.colors.hover};
+    color: ${({ theme }) => theme.colors.primaryHover}!important;
   }
 `;
 

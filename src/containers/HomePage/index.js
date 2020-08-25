@@ -1,9 +1,13 @@
 import { H1 } from '../../styles/typography';
+import LottieControl from '../../components/lottie';
 
-const HomePage = () => {
+// import * as MenuIcon from './lottie/menu.json';
+
+const HomePage = (props) => {
   return (
     <div>
       <H1 textAlign="center">Home page</H1>
+      {/* <LottieControl animationData={MenuIcon} /> */}
     </div>
   );
 };

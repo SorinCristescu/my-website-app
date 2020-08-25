@@ -2,76 +2,84 @@ import styled from 'styled-components';
 import { theme } from './theme';
 
 export const H1 = styled.h1`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MonumentExtended, Arial, Helvetica, sans-serif;
   font-style: ${(props) => props.style};
   font-size: 65px;
-  font-weight: 900;
+  font-weight: ultrabold;
   line-height: 1.5;
   letter-spacing: 2px;
   color: ${({ theme }) => theme.colors.primary};
   text-align: ${(props) => props.textAlign};
+  text-transform: uppercase;
 `;
 
 export const H2 = styled.h2`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MonumentExtended, Arial, Helvetica, sans-serif;
   font-style: ${(props) => props.style};
   font-size: 48px;
-  font-weight: 400;
+  font-weight: ultrabold;
   line-height: 1.5;
   letter-spacing: 2px;
   color: ${({ theme }) => theme.colors.primary};
   text-align: ${(props) => props.textAlign};
+  text-transform: uppercase;
 `;
 
 export const H3 = styled.h3`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MonumentExtended, Arial, Helvetica, sans-serif;
   font-style: ${(props) => props.style};
-  font-size: 48px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: ultrabold;
   line-height: 1.5;
   letter-spacing: 2px;
   color: ${({ theme }) => theme.colors.primary};
   text-align: ${(props) => props.textAlign};
+  text-transform: uppercase;
 `;
 
 export const H4 = styled.h4`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MonumentExtended, Arial, Helvetica, sans-serif;
   font-style: ${(props) => props.style};
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 2px;
+  font-size: 26px;
+  font-weight: ultrabold;
+  line-height: 1;
+  letter-spacing: 1px;
   color: ${({ theme }) => theme.colors.primary};
   text-align: ${(props) => props.textAlign};
+  text-transform: uppercase;
+  padding: 0;
+  margin: 10px;
 `;
 
 export const H5 = styled.h5`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
   font-style: ${(props) => props.style};
   font-size: 48px;
-  font-weight: 400;
+  font-weight: extrabold;
   line-height: 1.5;
   letter-spacing: 2px;
   color: ${({ theme }) => theme.colors.primary};
   text-align: ${(props) => props.textAlign};
+  text-transform: uppercase;
 `;
 
 export const H6 = styled.h6`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
   font-style: ${(props) => props.style};
   font-size: 48px;
-  font-weight: 400;
+  font-weight: extrabold;
   line-height: 1.5;
   letter-spacing: 2px;
   color: ${({ theme }) => theme.colors.primary};
   text-align: ${(props) => props.textAlign};
+  text-transform: uppercase;
 `;
 
 export const P = styled.p`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
   font-style: ${(props) => props.style};
   font-size: 48px;
-  font-weight: 400;
+  font-weight: regular;
   line-height: 1.5;
   letter-spacing: 2px;
   color: ${({ theme }) => theme.colors.primary};
@@ -79,10 +87,10 @@ export const P = styled.p`
 `;
 
 export const Strong = styled.strong`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
   font-style: ${(props) => props.style};
   font-size: 48px;
-  font-weight: 400;
+  font-weight: regular;
   line-height: 1.5;
   letter-spacing: 2px;
   color: ${({ theme }) => theme.colors.primary};
@@ -90,10 +98,10 @@ export const Strong = styled.strong`
 `;
 
 export const Small = styled.small`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
   font-style: ${(props) => props.style};
   font-size: 48px;
-  font-weight: 400;
+  font-weight: regular;
   line-height: 1.5;
   letter-spacing: 2px;
   color: ${({ theme }) => theme.colors.primary};
@@ -113,10 +121,10 @@ export const Code = styled.code`
 `;
 
 export const Em = styled.em`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
   font-style: ${(props) => props.style};
   font-size: 48px;
-  font-weight: 400;
+  font-weight: regular;
   line-height: 1.5;
   letter-spacing: 2px;
   color: ${({ theme }) => theme.colors.primary};
@@ -124,10 +132,10 @@ export const Em = styled.em`
 `;
 
 export const Blockquote = styled.blockquote`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
   font-style: ${(props) => props.style};
   font-size: 48px;
-  font-weight: 400;
+  font-weight: regular;
   line-height: 1.5;
   letter-spacing: 2px;
   color: ${({ theme }) => theme.colors.primary};
