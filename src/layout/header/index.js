@@ -27,10 +27,16 @@ const Header = () => {
           </Link>
         </li>
         <li>
+          <Link href="/estimator">
+            <A>estimate your project</A>
+          </Link>
+        </li>
+        <li>
           <Link href="/contact">
             <A>contact</A>
           </Link>
         </li>
+
         <li>
           <Link href="/register">
             <A>register</A>
@@ -46,9 +52,10 @@ const Header = () => {
             <A>log out</A>
           </Link>
         </li>
+
         <li>
-          <Link href="/estimator">
-            <A>estimate your project</A>
+          <Link href="/crm">
+            <A>CRM</A>
           </Link>
         </li>
       </Navbar>
