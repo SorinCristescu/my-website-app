@@ -1,55 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Lottie from 'react-lottie';
 
-export default class LottieControl extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isStopped: false, isPaused: false };
-  }
+export const LottieHoverControl = ({ loop, autoplay, animationData }) => {
+  const [isStopped, setIsStopped] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+  const defaultOptions = {
+    loop: loop,
+    autoplay: autoplay,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
 
-  render() {
-    const buttonStyle = {
-      display: 'block',
-      margin: '10px auto'
-    };
+  return (
+    <div
+      onMouseEnter={() => setIsStopped(false)}
+      onMouseLeave={() => setIsStopped(true)}
+    >
+      <Lottie
+        options={defaultOptions}
+        height={100}
+        width={100}
+        isStopped={isStopped}
+        isPaused={isPaused}
+      />
+    </div>
+  );
+};
 
-    const defaultOptions = {
-      loop: true,
-      autoplay: true,
-      animationData: this.props.animationData,
-      rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice'
-      }
-    };
+export const LottieClickControl = ({ loop, autoplay, animationData }) => {
+  const [isStopped, setIsStopped] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+  const defaultOptions = {
+    loop: loop,
+    autoplay: autoplay,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
 
-    return (
-      <div>
-        <Lottie
-          options={defaultOptions}
-          height={400}
-          width={400}
-          isStopped={this.state.isStopped}
-          isPaused={this.state.isPaused}
-        />
-        <button
-          style={buttonStyle}
-          onClick={() => this.setState({ isStopped: true })}
-        >
-          stop
-        </button>
-        <button
-          style={buttonStyle}
-          onClick={() => this.setState({ isStopped: false })}
-        >
-          play
-        </button>
-        <button
-          style={buttonStyle}
-          onClick={() => this.setState({ isPaused: !this.state.isPaused })}
-        >
-          pause
-        </button>
-      </div>
-    );
-  }
-}
+  return (
+    <div onClick={() => setIsStopped(!isStopped)}>
+      <Lottie
+        options={defaultOptions}
+        height={100}
+        width={100}
+        isStopped={isStopped}
+        isPaused={isPaused}
+      />
+    </div>
+  );
+};

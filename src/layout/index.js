@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 
 import Link from 'next/link';
@@ -13,7 +13,7 @@ import Footer from './footer';
 import { LayoutContainer, Main, Menu } from './style';
 
 const Layout = ({ children }) => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const menu = useRef(null);
   console.log('layout', isOpen);
   useEffect(() => {
